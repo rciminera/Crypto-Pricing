@@ -1,4 +1,4 @@
-![cryptocurrency](https://user-images.githubusercontent.com/75695931/123559617-1d6bab00-d76b-11eb-88ce-9c9aabb4ee4a.jpg)
+![5d07c76a696bfc4b3cb88294_cryptocurrency](https://user-images.githubusercontent.com/75695931/123559701-9a972000-d76b-11eb-84b8-0a63a1619eb3.jpg)
 # Crypto-Pricing
 
 ###  Collaborators:  
