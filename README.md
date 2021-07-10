@@ -1,3 +1,6 @@
+
+<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/currency_header.png"
+
 # Crypto-Pricing
 
 ###  Collaborators:  
@@ -19,6 +22,9 @@ The questions we hope to answer with the data are as follows:
 - What features are indicative of the pricing of a specific coin?
 - Are there specific classes of coins that have better pricing performance?
 - Are there any other data that we would need beyond our initial scope to create a better model?
+
+[Crypto_Pricing google slides found here](https://docs.google.com/presentation/d/15HTej_w7RdIQ4ITdhFqotFLWZK9jJ1BHhsOE7CyncE0/edit?usp=sharing)
+
 
 ## Project Deliverables
 
