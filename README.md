@@ -1,5 +1,5 @@
 
-<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/currency_header.png"
+<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/currency_header.png" width = "800" >
 
 # Crypto-Pricing
 
