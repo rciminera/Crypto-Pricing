@@ -30,9 +30,9 @@ The questions we hope to answer with the data are as follows:
 
 Sources of data for the analysis include API's from:
 
-www.coingecko.com for coin and market data
-www.lunarcrush.com for coin sentiment data
-www.messari.io for coin and market data
+- www.coingecko.com for coin and market data
+- www.lunarcrush.com for coin sentiment data
+- www.messari.io for coin and market data
 
 In addition other research sources were reviewed to understand categorization of crypto currencies eg https://medium.com/coinmonks/crypto-categories-you-need-to-know-9e78a5bdebc7.
 
@@ -43,7 +43,7 @@ The following technology, tools, and algorithms will be used for this project
 - Data extract using JSON within a Jupyter notebook with Pandas
 - Cleaning data for table loads and machine learning pre-processing using Jupyter notebook
 - Data load using Postgre, Colab, and AWS
-- Machine Learning using the Random Forest algorithm and the imblearn and sklearn librarys
+- Machine Learning using the Random Forest algorithm and the imblearn and sklearn libraries
 - Data visualization using Plotly and Tableau
 
 
