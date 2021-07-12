@@ -4,7 +4,7 @@
 # Crypto-Pricing
 
 ###  Collaborators:  
-Bimla Basnet,
+Bimala Basnet,
 Cameron Ewan,
 Bob Ciminera
 
@@ -23,41 +23,67 @@ The questions we hope to answer with the data are as follows:
 - Are there specific classes of coins that have better pricing performance?
 - Are there any other data that we would need beyond our initial scope to create a better model?
 
-[Crypto_Pricing google slides found here](https://docs.google.com/presentation/d/15HTej_w7RdIQ4ITdhFqotFLWZK9jJ1BHhsOE7CyncE0/edit?usp=sharing)
+
+[A Google Slide presentation can be found by clicking this link](https://docs.google.com/presentation/d/15HTej_w7RdIQ4ITdhFqotFLWZK9jJ1BHhsOE7CyncE0/edit?usp=sharing)
+
+## Data Sources
+
+Sources of data for the analysis include API's from:
+
+www.coingecko.com for coin and market data
+www.lunarchrush.com for coin sentiment data
+www.messari.io for coin and market data
+
+In addition other research sources were reviewed to understand categorization of crypto currencies eg https://medium.com/coinmonks/crypto-categories-you-need-to-know-9e78a5bdebc7.
+
+## Methods
+
+The following technology, tools, and algorithms will be used for this project
+
+Data extract using JSON within a Jupyter notebook with Pandas
+Cleaning data for table loads and machine learning pre-processing using Jupyter notebook
+Data load using Postgre, Colab, and AWS
+Machine Learning using the Random Forest algorithm and the imblearn and sklearn librarys
+Data visualization using Plotly and Tableau
 
 
 ## Project Deliverables
 
-This project will have 4 segments of specific deliverables for each segment due on the following dates: June 27, July 11, July 18, and July 25.  During the week of July 18 there will be a live presentation.
+This project will have 4 segments of specific deliverables for each segment due on the following dates: June 27, July 11, July 18, and July 25.  
 
-Deliverables for June 27 are described below.
+Deliverables are described below.
 
 ### Git Hub Repository
 
-A git hub repository named Crypto-Pricing has been set up with branches for each member of the team according to their roles.  Additional branches will be created and merged for specific tasks and then merged into the main branch during the course of the project.
+A git hub repository named Crypto-Pricing has been set up with branches for each member of the team according to their deliverables.  Additional branches will be created and merged for specific tasks and then merged into the main branch during the course of the project.
 
 In addition to github communication among the team members will be via slack channel and scheduled zoom calls.
 
-June 27 Deliverables:
-- At least one branch for each team member
-- Each team member has at least four commits from the duration of the first segment
-
 ### Machine Learning Model
 
-June 27 Deliverables:
+July 11 Deliverables:
 
-A machine learning model will be created by to stand in for the final machine learning model and will accomplish the following:
-- Takes in data in from the provisional database
-- Outputs label(s) for input data
+Code for the machine learning model that: 
+- Preprocesses the data provided from the database load including dropping of nulls
+- Feature selection based on data consistency and frequency distribution
+- Scaling of the data using Standard Scaler
+- Use of the Random Forest Model due to it's efficiency and feature importance ranking
 
 ### Database
 
-June 27 Deliverables:
+July 11 Deliverables:
 
-A provisional database will be created as a mockup for the final database to accomplish the following:
-- Sample data that mimics the expected final database structure or schema
-- Draft machine learning module is connected to the provisional database
+A database has been created with three tables:
+- An ERD was create and a database schema were created using Postgre and ported to AWS DB
+- Colab used to load extract data into 2 tables which were then joined using SQL Alchemy into a third table for ML processing
+- A csv of the merged database was also created as future input to Tableau visualization
+
+### Dashboard
+
+A story board has been created using Google slides
+INteractive elements will include coin selection and ability to visualize coins by category and performance
+
 
 ## Summary
 
-It is our desire to build a machine learning model to predict future prices over a 12 month horizon with a reasonable amount of accuracy.
+It is our desire to build a machine learning model to predict future prices over a 12 month horizon with an accuracy of 75% or higher.
