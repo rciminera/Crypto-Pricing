@@ -57,3 +57,25 @@ Historically, new models of computing have tended to emerge every 10–15 years:
 Blockchain computers were first proposed in 2008 by Satoshi Nakamoto in the (Bitcoin whitepaper)[https://bitcoin.org/bitcoin.pdf]. Those original ideas have since been dramatically expanded by developers and researchers around the world. Blockchain computers are new types of computers where the unique capability is trust between users, developers, and the platform itself. This trust emerges from the mathematical and game-theoretic properties of the system, without depending on the trustworthiness of individual network participants. 
 
 Although the Bitcoin whitepaper is now more than 10 years old, we believe we are still early in the crypto movement. Crypto is purely a software movement and doesn’t depend on a hardware buildout, in contrast to, say, the internet, which required laying cables and building cell towers. Second, the space is developing extremely rapidly, partly because the code, data, and knowledge is largely open source, and partly because of the increasing inflow of talent.
+
+
+✓ Description of preliminary data
+preprocessing:
+- The first thing that we needed to do was to drop all our null values so that we can actually use our data for the model. 
+- Then we needed to drop certain columns that we would not be using for our model so that we are only hvaing to deal with the data that we actuualy need.
+
+✓ Description of preliminary feature
+engineering and preliminary feature
+selection, including their decision-making
+process 
+- The features that we are selcting are ('current_price','circulating_supply', 'fully_diluted_valuation', 'total_volume', 'total_supply', 'market_cap')
+- The reason that we selected these are that we have the most precise and trustworthy data for these categories. We also think that since we are trying to find a way to predict the crypto market based on certain features we believe that these are both good indicators into the financial side of cryptos, but also lend themselves to work well in our model. 
+- We also plan to include some sentiment data as we believe that socila media has a unique influnece on the crypto market and we are curious to see if there is some predictable trend between interaction and reactions and how well a coin does in the market. 
+
+✓ Description of how data was split into
+training and testing sets 
+- 
+
+✓ Explanation of model choice, including
+limitations and benefits
+- We will be using a random forst model 
