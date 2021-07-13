@@ -63,12 +63,24 @@ In addition to github communication among the team members will be via slack cha
 
 July 11 Deliverables:
 
-Code for the machine learning model that: 
+#### Code for the machine learning model that: 
 - Preprocesses the data provided from the database load including dropping of nulls
 - Feature selection based on data consistency and frequency distribution
 - Scaling of the data using Standard Scaler
 - Use of the Random Forest Model due to it's efficiency and feature importance ranking
 
+#### Description of preliminary data preprocessing:
+- The first thing that we needed to do was to drop all our null values so that we can actually use our data for the model.
+- Then we needed to drop certain columns that we would not be using for our model so that we are only hvaing to deal with the data that we actuualy need.
+#### Description of preliminary feature engineering and preliminary feature selection:
+- The features that we are selecting are ('current_price','circulating_supply', 'fully_diluted_valuation', 'total_volume', 'total_supply', 'market_cap')
+- The reason that we selected these are that we have the most precise and trustworthy data for these categories. We also think that since we are trying to find a way to predict the crypto market based on certain features we believe that these are both good indicators into the financial side of cryptos, but also lend themselves to work well in our model.
+- We also plan to include some sentiment data as we believe that socila media has a unique influnece on the crypto market and we are curious to see if there is some predictable trend between interaction and reactions and how well a coin does in the market.
+#### Description of how data was split into training and testing sets
+- We will use current price and market cap as our testing sets and then the rest as our trainable data. The reason for this is that we are interested in seeing if our model is able to prectit the price and how well a coin is doing so we want to make sure that we train our model to be tested against the features/data that we are targeting to predict.
+#### Explanation of model choice, including limitations and benefits
+- We will be using a random forest model for a few reasons it is Robust to outliers, Works well with non-linear data, Better accuracy than other classification algorithms.
+A couple of things that we do need to be careful about are, Random forests are found to be biased while dealing with categorical variables and Not suitable for linear methods with a lot of sparse features. they also train slowly but we have plenty of time to train our model.
 ### Database
 
 July 11 Deliverables:
