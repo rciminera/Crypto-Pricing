@@ -88,13 +88,13 @@ A database has been created with three tables:
 - An ERD was created and a database schema were created using Postgre and ported to AWS DB
 
 
-<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/QuickDBD-export%20.png" width = "500 >
+<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/QuickDBD-export%20.png" width = "500" >
 
-<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/crypto_merge_data.png" width = "500 >
+<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/crypto_merge_data.png" width = "200" >
 
 - Colab used to load extract data into 2 tables which were then joined using SQL Alchemy into a third table for ML processing
 
-(*The notebook link can be found here)[https://github.com/rciminera/Crypto-Pricing/blob/main/Notebooks/crypto.ipynb]
+[The notebook link can be found here](https://github.com/rciminera/Crypto-Pricing/blob/main/Notebooks/crypto.ipynb)
 
 - A csv of the merged database was also created as future input to Tableau visualization
 
