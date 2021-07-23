@@ -20,11 +20,6 @@ The questions we hope to answer with the data are as follows:
 - Are there specific classes of coins that have better pricing performance?
 - Are there any other data that we would need beyond our initial scope to create a better model?
 
-
-[Google Slide Presentation](https://docs.google.com/presentation/d/1Ckl0IfKMgDoyJidYdW5T5Cj9Ryua9ZXZu3OqbFGXibU/edit#slide=id.ge499c0d902_0_0)
-
-
-[Tableau Crypto Pricing Visualizations](https://public.tableau.com/app/profile/bob.ciminera/viz/Crypto-pricing/CryptoYTDGrowth)
 ## Data Sources
 
 Sources of data for the analysis include API's from:
@@ -134,8 +129,19 @@ Please see ML secion above for Messari extract ERD.
 
 ### Dashboard
 
-A story board has been created using Google slides
-Interactive elements will include coin selection and ability to visualize coins by category and performance
+Am interactive has been created using Tableau.  
+Interactive elements will include coin selection and ability to visualize coins by category and performance.
+
+[Tableau Crypto Pricing Visualizations](https://public.tableau.com/app/profile/bob.ciminera/viz/Crypto-pricing/CryptoYTDGrowth)
+
+
+In addition, a Google slide presentation was created for an overview that was delivered live on July 23.
+
+[Google Slide Presentation](https://docs.google.com/presentation/d/1Ckl0IfKMgDoyJidYdW5T5Cj9Ryua9ZXZu3OqbFGXibU/edit#slide=id.ge499c0d902_0_0)
+
+
+
+
 
 
 ## Summary
