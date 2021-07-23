@@ -21,8 +21,10 @@ The questions we hope to answer with the data are as follows:
 - Are there any other data that we would need beyond our initial scope to create a better model?
 
 
-[A Google Slide presentation can be found by clicking this link](https://docs.google.com/presentation/d/1Ckl0IfKMgDoyJidYdW5T5Cj9Ryua9ZXZu3OqbFGXibU/edit#slide=id.ge50b36afca_0_0)
+[Google Slide Presentation](https://docs.google.com/presentation/d/1Ckl0IfKMgDoyJidYdW5T5Cj9Ryua9ZXZu3OqbFGXibU/edit#slide=id.ge499c0d902_0_0)
 
+
+[Tableau Crypto Pricing Visualizations](https://public.tableau.com/app/profile/bob.ciminera/viz/Crypto-pricing/CryptoYTDGrowth)
 ## Data Sources
 
 Sources of data for the analysis include API's from:
@@ -40,36 +42,35 @@ The following technology, tools, and algorithms used for this project
 - Data extract using JSON within a Jupyter notebook with Pandas
 - Cleaning data for table loads and machine learning pre-processing using Jupyter notebook
 - Data load using Postgre, Colab, and AWS
-- Machine Learning using the Random Forest algorithm and the imblearn and sklearn libraries
-- Data visualization using Plotly and Tableau
+- Machine Learning using the Random Forest Regressor algorithm.
+- Data visualization using Tableau
 
 
 ## Project Deliverables
 
-This project has 4 segments of specific deliverables for each segment due on the following dates: June 27, July 11, July 18, and July 25.  
+This project had 4 segments of specific deliverables for each segment due on the following dates: June 27, July 11, July 18, and July 25.  
 
 Deliverables are described below.
 
 ### Git Hub Repository
 
-A git hub repository named Crypto-Pricing has been set up with branches for each member of the team according to their deliverables.  Additional branches will be created and merged for specific tasks and then merged into the main branch during the course of the project.
-
-In addition to github communication among the team members will be via slack channel and scheduled zoom calls.
+A git hub repository named Crypto-Pricing was set up with branches for each member of the team according to their deliverables.  Additional branches were created and merged for specific tasks and then merged into the main branch during the course of the project.
 
 ### Machine Learning Model
 
-July 18 Deliverables:
+Final Deliverables:
 
 #### Code for the machine learning model that: 
-- Preprocesses the data provided from the database load including dropping of nulls
+- Preprocessed the data provided from the database load including dropping of nulls
 - Feature selection based on data consistency and frequency distribution
 - Scaling of the data using Standard Scaler
-- Use of the Random Forest Model due to it's efficiency and feature importance ranking
+- Use of the Random Forest Regressor Model due to it's efficiency and feature importance ranking
 
-#### Preliminary data preprocessing:
+#### Data preprocessing:
+- After a number of attempts to find complete data a data set of 832 crypto currencies with 14 features was extacted, transformed, and then loaded to an AWS databse for processing by the ML model.
 - All null values were dropped to prepare the data for training.
 - Columns such as "ATH" (all time high) were dropped as non important.
-#### Preliminary feature engineering and preliminary feature selection:
+#### Feature engineering and selection:
 - The features selected are ('current_price','circulating_supply', 'fully_diluted_valuation', 'total_volume', 'total_supply', 'market_cap')
 - The reason for selecing these features are: 
     - We have the most precise and trustworthy data for these categories
@@ -80,15 +81,20 @@ July 18 Deliverables:
 #### Explanation of model choice, including limitations and benefits
 - We will be using a random forest model for a few reasons it is Robust to outliers, Works well with non-linear data, Better accuracy than other classification algorithms.
 - A couple of things that we do need to be careful about are, Random forests are found to be biased while dealing with categorical variables and Not suitable for linear methods with a lot of sparse features. they also train slowly but we have plenty of time to train our model.
+
+In addition, the random forest regressor does not support confusion matrix due to the fact that the regressor classifier is for labeled discrete classes and regressor is for continuous classes. Therefore, there is no confusion matrix without labeled classes
+
+
 ### Database
 
-July 18 Deliverables:
 
-A database has been created with three tables:
+A database has been created with four tables:
 - An ERD was created and a database schema were created using Postgre and ported to AWS DB
 
 
 <img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/QuickDBD-export%20.png" width = "500" >
+
+<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/crypto_merge_data.png" width = "200" >
 
 <img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/crypto_merge_data.png" width = "200" >
 
@@ -106,4 +112,18 @@ Interactive elements will include coin selection and ability to visualize coins 
 
 ## Summary
 
-It is our desire to build a machine learning model to predict future prices over a 12 month horizon with an accuracy of 75% or higher.
+Despite initial problems finding sufficient complete data, the Machine Learning Model delivered 70% Accuracy, albeit with wide error
+- Features such as Supply and Market Cap indicative of Pricing Prediction
+- Regression Model Problematic for Pricing Analysis
+
+Our analysis indicated that Payments and Finance Coins have performed the best in terems of pricing appreciation.
+- New cryptocurrency coins with low entry price have highest rate of appreciation eg. Dogecoin
+
+Overall. the cryptocurrency market grew at 33% YTD despite recent downturn from record highs still makes this an effort worth refining
+- Further analysis on coins with strong use cases eg decentralized finance, gaming, and others is required to find the best bets.
+- Although sentiment data was ultimately not used in the model, we beleive there is an opportunity to improve on that in the future.
+
+
+
+
+
