@@ -99,13 +99,13 @@ Areas we need to be careful about are:
 The accuracy score came in at 71.23% albeit with a wide Mean Absolute Error of 436.76 degrees.  Please note that the Random Forest Regressor does not support creating a confusion matrix.
 
 
-<img src="" width = "500" >
+<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/ML_code_snippet.png" width = "500" >
 
 
 The most important features were:
 
 
-<img src="" width = "500" >
+<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/feature_importance.png" width = "500" >
 
 
 
