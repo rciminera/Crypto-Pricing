@@ -75,20 +75,44 @@ Final Deliverables:
 - The reason for selecing these features are: 
     - We have the most precise and trustworthy data for these categories
     - We also think that these features will enable us to that these are both good indicators into the financial side of cryptos, and also lend themselves to work well in our model.
-- Sentiment data features will also be added to the model as we believe that social media has a unique influence on the crypto market and we are curious to see if there is some predictable trend between interaction and reactions and how well a coin does in the market.
+- Sentiment data features were originally planned for the model but due to the lack of coins with this data, we eliminated these features from the model.   We continue to believe that social media has a unique influence on the crypto market and we are curious to see if there is some predictable trend between interaction and reactions and how well a coin does in the market.
+
+The following ERD shows the features used in the model.  Note that the target feature was PercentageChangeYTDUsd
+
+<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/QuickDBD-export-messari.png" width = "200" >
+
+
 #### Description of how data was split into training and testing sets
 - We will use current price and market cap as our testing sets and then the rest as our trainable data. The reason for this is that we are interested in seeing if our model is able to predict the price and how well a coin is doing so we want to make sure that we train our model to be tested against the features/data that we are targeting to predict.
 #### Explanation of model choice, including limitations and benefits
-- We will be using a random forest model for a few reasons it is Robust to outliers, Works well with non-linear data, Better accuracy than other classification algorithms.
-- A couple of things that we do need to be careful about are, Random forests are found to be biased while dealing with categorical variables and Not suitable for linear methods with a lot of sparse features. they also train slowly but we have plenty of time to train our model.
+The Random Forest Model was chosen for a few reasons:
+-  It is robust to outliers
+-  Works well with non-linear data, Better accuracy than other classification algorithms.
+Areas we need to be careful about are:
+- Random forests are found to be biased while dealing with categorical variables and Not suitable for linear methods with a lot of sparse features
+- Model trains slowly
 
-In addition, the random forest regressor does not support confusion matrix due to the fact that the regressor classifier is for labeled discrete classes and regressor is for continuous classes. Therefore, there is no confusion matrix without labeled classes
+
+
+#### Results
+
+The accuracy score came in at 71.23% albeit with a wide Mean Absolute Error of 436.76 degrees.  Please note that the Random Forest Regressor does not support creating a confusion matrix.
+
+
+<img src="" width = "500" >
+
+
+The most important features were:
+
+
+<img src="" width = "500" >
+
 
 
 ### Database
 
 
-A database has been created with four tables:
+A database was created with four tables:
 - An ERD was created and a database schema were created using Postgre and ported to AWS DB
 
 
@@ -96,13 +120,14 @@ A database has been created with four tables:
 
 <img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/crypto_merge_data.png" width = "200" >
 
-<img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/crypto_merge_data.png" width = "200" >
+Please see ML secion above for Messari extract ERD.
 
 - Colab used to load extract data into 2 tables which were then joined using SQL Alchemy into a third table for ML processing
 
-[The notebook link can be found here](https://github.com/rciminera/Crypto-Pricing/blob/main/Notebooks/crypto.ipynb)
+[The notebook link for the initial loads can be found here](https://github.com/rciminera/Crypto-Pricing/blob/main/Notebooks/crypto.ipynb)
 
-- A csv of the merged database was also created as future input to Tableau visualization
+
+- A csv of the merged database was also created as input to Tableau visualization
 
 ### Dashboard
 
