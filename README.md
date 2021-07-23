@@ -33,7 +33,7 @@ Sources of data for the analysis include API's from:
 - www.lunarcrush.com for coin sentiment data
 - www.messari.io for coin and market data
 
-In addition other research sources were reviewed to understand categorization of crypto currencies eg https://medium.com/coinmonks/crypto-categories-you-need-to-know-9e78a5bdebc7.
+In addition other research sources were reviewed to understand categorization of crypto currencies eg https://medium.com/coinmonks/crypto-categories-you-need-to-know-9e78a5bdebc7
 
 ## Methods
 
@@ -67,9 +67,9 @@ Final Deliverables:
 - Use of the Random Forest Regressor Model due to it's efficiency and feature importance ranking
 
 #### Data preprocessing:
-- After a number of attempts to find complete data a data set of 832 crypto currencies with 14 features was extacted, transformed, and then loaded to an AWS databse for processing by the ML model.
-- All null values were dropped to prepare the data for training.
-- Columns such as "ATH" (all time high) were dropped as non important.
+- After a number of attempts to find complete data a data set of 832 crypto currencies with 14 features was extacted, transformed, and then loaded to an AWS databse for processing by the ML model
+- All null values were dropped to prepare the data for training
+- Columns such as "ATH" (all time high) were dropped as non important
 #### Feature engineering and selection:
 - The features selected are ('current_price','circulating_supply', 'fully_diluted_valuation', 'total_volume', 'total_supply', 'market_cap')
 - The reason for selecing these features are: 
@@ -77,7 +77,7 @@ Final Deliverables:
     - We also think that these features will enable us to that these are both good indicators into the financial side of cryptos, and also lend themselves to work well in our model.
 - Sentiment data features were originally planned for the model but due to the lack of coins with this data, we eliminated these features from the model.   We continue to believe that social media has a unique influence on the crypto market and we are curious to see if there is some predictable trend between interaction and reactions and how well a coin does in the market.
 
-The following ERD shows the features used in the model.  Note that the target feature was PercentageChangeYTDUsd
+The following ERD shows the features used in the model.  Note feature used as target was PercentageChangeYTDUsd
 
 <img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/QuickDBD-export-messari.png" width = "200" >
 
@@ -124,7 +124,7 @@ Please see ML secion above for Messari extract ERD.
 
 - Colab used to load extract data into 2 tables which were then joined using SQL Alchemy into a third table for ML processing
 
-[The notebook link for the initial loads can be found here](https://github.com/rciminera/Crypto-Pricing/blob/main/Notebooks/crypto.ipynb)
+[The notebook link for the database loads can be found here](https://github.com/rciminera/Crypto-Pricing/blob/main/Notebooks/crypto.ipynb)
 
 
 - A csv of the merged database was also created as input to Tableau visualization
