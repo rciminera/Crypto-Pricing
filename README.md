@@ -93,10 +93,13 @@ Areas we need to be careful about are:
 - Model trains slowly
 
 
-
 #### Results
 
-The accuracy score came in at 71.23% albeit with a wide Mean Absolute Error of 436.76 degrees.  Please note that the Random Forest Regressor does not support creating a confusion matrix.
+The accuracy score came in at 71.23% albeit with a wide Mean Absolute Error of 436.76 degrees. 
+
+The accuracy score of 71.13% means that our model can predict the price change year to date with 71% accuracy. While we would have liked to achieve a score of over 75%, we are happy with this score because after creating the model, it was realized that this might not be a problem that can be solved with machine learning. 
+
+Because we used a random forest regressor, we were not able to create a confusion matrix. Random forest regressors do not support confusion matrices because the classifier is for labeled discrete classes, and the regressor is for continuous classes. So there cannot be a confusion matrix without labeled classes.
 
 
 <img src="https://github.com/rciminera/Crypto-Pricing/blob/main/Images/ML_code_snippet.png" width = "500" >
@@ -137,9 +140,11 @@ Interactive elements will include coin selection and ability to visualize coins 
 
 ## Summary
 
-Despite initial problems finding sufficient complete data, the Machine Learning Model delivered 70% Accuracy, albeit with wide error
+Despite initial problems finding sufficient complete data, the Machine Learning Model delivered 71% Accuracy, albeit with wide error
 - Features such as Supply and Market Cap indicative of Pricing Prediction
 - Regression Model Problematic for Pricing Analysis
+
+Our conclusion is that: while our model does work, there is a large amount of error that needs to be factored in, meaning that our results should not be used as one of many inputs for potential investment decisions.
 
 Our analysis indicated that Payments and Finance Coins have performed the best in terems of pricing appreciation.
 - New cryptocurrency coins with low entry price have highest rate of appreciation eg. Dogecoin
